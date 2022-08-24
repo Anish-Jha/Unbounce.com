@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: "barlow semi condensed", sans-serif;
+    LINE-HEIGHT:83.08px;
+    font-size: 72px;
+    text-align: center;
+    word-spacing: 0;
+    font-weight: 400;
+    color: #303030;
+}
+p{
+    font-family: "source sans pro", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(100, 99, 99);
+    margin-bottom: 6%;
+}
+#main{
+    display: flex;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    gap: 20px;
+}
+#main>div{
+    width: 24%;
+    border: solid rgb(212, 211, 211) 0.5px;
+    height: 350px;
+    margin: auto;
+}
+#main>div>.head{
+text-align: left;
+margin-left: 10%;
+font-family: "barlow semi condensed", sans-serif;
+color: #303030;
+font-size: 30px;
+line-height: 36px;
+}
+#main>div>.bottom{
+    text-align: left;
+    padding:0px 27px 0 27px;
+    font-family: "source sans pro", sans-serif;
+    color: #535353fa;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 300;
+    word-spacing: 0;
+    }
+#main>div>span{
+    margin-top: 3%;
+    float: left;
+    width: 2%;
+    height: 30px;
+}
+#main>div:nth-child(1)>span{
+background-color: green;
+}
+#main>div:nth-child(2)>span{
+    background-color: pink;
+}
+#main>div:nth-child(3)>span{
+background-color: green;
+}
+#main>div:nth-child(4)>span{
+background-color: pink;
+}
+button{
+    border: 2.5px solid blue;
+    background-color: transparent;
+    color: blue;
+    width: 150px;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:"source sans pro", sans-serif;
+}
+div:nth-child(1)>button{
+    margin: 22% 0 0 22%;
+}
+div:nth-child(2)>button{
+    margin: 11% 0 0 22%;
+}
+div:nth-child(3)>button{
+    margin: 1% 0 0 22%;
+}
+div:nth-child(4)>button{
+    margin: 11% 0 0 22%;
+}
+button:hover{
+    background-color: blue;
+    color: white;
+}
+#second{
+    width: 100%;
+    margin-top: 10%;
+    background-color: #303030;
+    color: white;
+}
+#heading{
+    padding: 20px;  
+    width: 65%;
+    margin: auto;
+}
+#heading>h1{
+    color: white;
+}
+#heading>p{
+    color: white;
+}
+#contact{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    justify-content: center;
+    gap: 40px;
+}
+#contact>div{
+    height: 400px;
+    padding: 5px;
+}
+#contact>div:nth-child(1){
+ width: 33%;
+}
+#contact>div:nth-child(2){
+    width: 25%;
+    margin-left: 20px;
+}
+#contact>div:nth-child(3){
+    width: 15%;
+}
+.suB1{
+    display: flex;
+}
+.suB1>a>img{
+    width: 200px;
+}
+.idk{
+   margin-left: 15%;
+   width: 80%;
+}
+.ight{
+    text-align: left;
+    font-family: "source sans pro", sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    word-spacing: 0;
+    margin-bottom: 60px;
+}
+.idc{
+    text-align: left;
+    font-family: "barlow semi condensed", sans-serif;
+    color: white;
+    font-size: 27px;
+    line-height: 30px; 
+}   
