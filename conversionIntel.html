@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbounce/Conversion Intelliegence</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            color: #303030;
+        }
+        #ci-1-div{
+            display: flex;
+            width: 100%;
+
+            background-color: #303030;
+        }
+        #ci-1-topline{
+            display: flex;
+            align-items: center;
+            font-family:'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            font-weight: lighter;
+            color: white;
+            margin-top: 50px;
+            
+        }
+
+        #ci-1-topline h3{
+            letter-spacing: 1px;
+        }
+
+        #line{
+            position: relative;
+            top: -5px;
+            margin-right: 20px;
+        }
+
+        #ci-1-left{
+            width: 50%;
+            /* border: 1px solid red; */
+            padding-left: 10%;
+            /* padding-right: 15%; */
+        }
+
+        #ci-1-right{
+            width: 50%;
+        }
+
+        #ci-1-right img{
+            width: 90%;
+        }
+
+        #ci-1-div h1{
+            font-family:'Arial Narrow', Arial, sans-serif;
+            font-size: 70px;
+            color: white;
+            margin-top: 10px;
+            letter-spacing: 5px;
+            font-weight: 100;
+        }
+
+        #ci-1-div p{
+            color: white;
+            line-height: 32px;
+            font-size: 18px;
+            font-weight: 100;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+        }
+
+        #ci-1-button1{
+            padding: 20px 40px;
+            margin-right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            background-color: white;
+            color: #303030;
+        }
+
+        #ci-1-button1:hover{
+            background-color: #555555;
+            color: white;
+        }
+
+
+        #ci-1-button2{
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            /* border: none; */
+            background-color: #303030;
+            border: 1px solid white;
+            color: white;
+        }
+
+        #ci-1-button2:hover{
+            background-color: #555555;
+            color: white;
+            border: none;
+        }
+
+        #ci-2-div{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #ci-2-div h1{
+            font-size: 70px;
+            color: #303030;
+            font-weight: 100;
+        }
+
+        #ci-2-div>div{
+            color: #555555;
+            width: 80%;
+            margin: auto;
+            line-height: 32px;
+            font-size: 22px;
+        }
+
+        #ci-3-div{
+            /* border: 1px solid red; */
+            height: 400px;
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: space-between;
+            margin-top: 100px;
+            gap: 30px;
+        }
+
+        #ci-3-div>div{
+            /* width: 30%; */
+            /* border: 1px solid blue; */
+            height: 400px;
+            display: flex;
+            color: #303030;
+            padding: 20px;
+        }
+
+        #bvl{
+            border-left: 6px solid #0033ff;
+            height: 50px;
+            margin-right: 20px;
+            position: relative;
+            top: 20px;
+        }
+
+        #pvl{
+            border-left: 6px solid pink;
+            height: 50px;
+            margin-right: 20px;
+            position: relative;
+            top: 20px;
+
+        }
+
+        #ci-3-div h1{
+            font-family:'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        #ci-3-div p{
+            color: #555555;
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 100;
+            margin-top: 34px;
+        }
+
+        #ci-4-div{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+        }
+        #ci-4-div img{
+            width: 200px;
+        }
+
+        #ci-4-div>div:nth-child(2){
+            margin-left: 30px;
+            /* border: 1px solid blue; */
+        }
+
+        #ci-4-div :nth-child(2) h1{
+            font-family:'Arial Narrow', Arial, sans-serif;
+            font-weight: 100;
+            color: #303030;
+            font-size: 46px;
+            line-height: 60px;
+            letter-spacing: 1px;
+        }
+
+        #ci-4-div :nth-child(2) h3{
+            font-weight: 100;
+        }
+
+        .bold{
+            font-weight: 600;
+        }
+
+        #ci-5-div{
+            width: 100%;
+            border-top: 1px solid #cdcdcd;
+            border-bottom: 1px solid #cdcdcd;
+            margin-top: 100px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;  
+        }
+
+        #ci-5-div h1{
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 1px;
+            font-size: 46px;
+            font-weight: 100;
+        }
+
+        #ci-5-div button{
+            font-size: 24px;
+            padding: 20px 40px;
+            border: 0px;
+            background-color: #0033ff;
+            color: white;
+            margin-top: 30px;
+        }
+
+        #ci-5-div button:hover{
+            background-color: #0029cc;
+        }
+
+        #hline{
+            border-top: 8px solid pink;
+            width: 80px;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- first div start-->
+
+    <div id="ci-1-div">
+        <div id="ci-1-left">
+            <div id="ci-1-topline">
+                <div id="line">______</div>
+                <div><h3>UNBOUNCE CONVERSION INTELLIGENCE™</h3></div>
+            </div>
+
+            <h1>What is conversion intelligence?</h1>
+
+            <p>Conversion intelligence is pairing your emarketing IQ with machine learning to identify and act on conversion opportunities you normally can’t see on your own. This is the fastest way to build relevance and increase your chance of getting each and every visitor to convert.</p>
+            
+            <div>
+                <button id="ci-1-button1">Read our vision</button>
+                <button id="ci-1-button2">Start a 14-day trial</button>
+            </div>
+        </div>
+        <div id="ci-1-right">
+            <img src="https://unbounce.com/photos/Conversion-Intelligence-Page-Hero-Image-1.png" alt="">
+        </div>
+    </div>
+
+    <!-- second div start -->
+
+
+    <div id="ci-2-div">
+        <h1>Turns out, we’ve been thinking about marketing all wrong</h1>
+        <div>
+            <p>For years, the ideal process for marketers was to build a campaign, then optimize it, and then learn from the results. But for the vast majority of small businesses—this is a process that has never actually worked.</p>
+        </div>
+    </div>
+
+
+    <!-- third div start -->
+    
+
+    <div id="ci-3-div">
+        <!-- first div start -->
+        <div>
+            <div id="bvl"></div>
+            <div>
+                <h1>Building is guesswork</h1>
+                <p>Unless you’re one of those rare experts who knows what’ll be high-converting ahead of time, you’re stuck building content based on nothing but hunches and hard-to-verify research. (Hello, confirmation bias!)</p>
+            </div>
+        </div>
+        <!-- first div end -->
+
+        <div>
+            <div id="pvl"></div>
+            <div>
+                <h1>Optimization is flawed</h1>
+                <p>Only a small fraction of marketers take the time to optimize properly. Even worse—it’s impossible to A/B test a one-size-fits-all experience that works for everyone. “Champion” variants only get you so far.</p>
+            </div>
+        </div>
+
+
+        <div>
+            <div id="bvl"></div>
+            <div>
+                <h1>Learning is complicated</h1>
+                <p>Marketers are overloaded with data. Undoubtedly, there are golden nuggets out there that can help you get higher conversion rates. But where are they? Probably buried in a spreadsheet somewhere six tabs deep.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 4th div start -->
+
+    <div id="ci-4-div">
+        <div>
+            <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Victoria-Harkes-headshot.png.webp" alt="">
+        </div>
+
+        <div>
+            <h1>"The Design Assistant makes it so I don’t need to look at competitors, do the research, and can trust that you’re going to tell me what’s going to work."</h1>
+            <h3><span class="bold">Zoe Alexander,</span> Marketing Project Manager</h3>
+            <img src="./imageSrc/Capture.JPG" alt="">
+        </div>
+
+
+    </div>
+
+
+    <!-- 5th div start -->
+    <div id="ci-5-div">
+        <div id="hline"></div>
+        <h1>See how Smart Builder gets you more conversions</h1>
+        <button>Learn more</button>
+    </div>
+
+
+
+    <!-- 6th div start -->
+
+    <div id="ci-6-div">
+        <div>
+            <h1>Use AI to unlock your conversion potential</h1>
+            <p>Your past experiences, best practices, and raw creativity are what give you <span class="bold">marketing intelligence.</span> But when you’re going up against unbeatable budgets and entire teams of marketing specialists—you’re still at a competitive disadvantage.</p>
+            <p>But what if you could make data-backed decisions that were mathematically proven to get you higher conversion rates? This is conversion intelligence. In a nutshell: it’s you, and your marketing know-how, augmented by the processing power of machines.</p>
+        </div>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>
