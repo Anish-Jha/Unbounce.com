@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/5b7fbbfbc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/navbar.css">
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <a href="#"><img src="https://unbounce.com/wp-content/themes/unbounce2019/assets/img/unbounce-icon.svg?v=1" alt=""></a>
+            
+            <input type="checkbox" id="click-search">
+            <label for="click-search" class="search-icon">
+                <iconify-icon icon="fe:search" width="24" height="24"></iconify-icon>
+            </label>
+
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li id="product" class="nav-item">Products <i class="fa-solid fa-angle-down"></i></li>
+                <li id="solution" class="nav-item">Solutions <i class="fa-solid fa-angle-down"></i></li>
+                <li id="pricing" class="nav-item"><a href="#">Pricing</a></li>
+                <li id="learn" class="nav-item">Learn <i class="fa-solid fa-angle-down"></i></li>
+                <li id="contact" class="nav-item"><a href="#">Contact</a></li>
+                
+            </ul>
+        
+            <div id="right-nav">
+                <button id="serach-btn" onclick="search()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" placeholder="Search..." id="search">
+                <button id="login" class="nav-left-btn"><a href="#">Log In</a></button>
+                <button id="free-trial" class="nav-left-btn" onclick="startFree()">Start My Free Trial</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- top section -->
+  
+</body>
+</html>
+<script src="./script/navbar.js"></script>

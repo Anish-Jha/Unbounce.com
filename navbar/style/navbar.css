@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+#nav{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    border: 1px solid black;
+    background-color: #303030;
+    padding: 5px;
+    height: 80px;
+}
+#nav > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 82%;
+    margin: auto;
+}
+ul{
+    display: flex;
+    list-style: none;
+    width: 480px;
+    justify-content: space-around;
+}
+ul>li{
+    /* border: 1px solid red; */
+    padding: 15px 0px 15px 0px;
+}
+ul > #pricing, ul>#contact{
+    border: 2px solid #303030;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+ul > #pricing:hover, ul>#contact:hover{
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+img{
+    width: 160px;
+    height: 39px;
+    margin-right:-20px;
+    cursor: pointer;
+}
+#login{
+    width: 71.61px;
+    height: 42px;
+    background-color:#303030;
+    border-color: white;
+    padding: 10px 0px 10px 0px;
+}
+#login:hover{
+    background-color: grey;
+    border: grey;
+
+}
+#login a{
+    color: white;
+}
+#free-trial{
+    height: 44px;
+    width: 157px;
+    background-color:white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #303030;
+    padding: 10px 0px 10px 0px;
+}
+#free-trial:hover{
+    background-color: grey;
+    color: white;
+}   
+
+.nav-left-btn a{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#pricing > a{
+    text-decoration: none;
+    color: white;
+}
+#contact > a{
+    text-decoration: none;
+    color: white;
+
+}
+.nav-item{
+    color:#303030;
+    color: white;
+    font-size: 18px;
+    /* font-weight: bold; */
+    cursor: pointer;
+
+}
+#solution{
+    color:#303030;
+    color: white;
+}
+#search{
+    height: 25px;
+    color: white;
+    background-color: #303030;
+    border: none;
+    width: 100px;
+}
+.fa-angle-down{
+    font-size: 12px;
+    font-weight: bold;
+}
+.fa-magnifying-glass{
+    font-size: 18px;
+    background-color: #303030;
+}
+#serach-btn{
+    background-color: #303030;    
+    border:none;
+    cursor: pointer;
+}
+.fa-bars{
+    display: none;
+}
+#click{
+    display: none;
+}
+.search-icon{
+    display: none;
+}
+#click-search{
+    display: none;
+}
+
+@media screen and (min-width:1054px) and (max-width:1339px){
+    #nav > div{
+        width: 100%;
+        margin: auto;
+    }
+    .nav-item{
+        color:#303030;
+        color: white;
+        font-size: 18px;
+    }
+    #login{
+        /* border: 1px solid red; */
+        width: 65px;
+        height: 38px;
+        background-color:#303030;
+        /* border-color: blue; */
+        border-color: white;
+    }
+    #login a{
+        color: white;
+    }
+    #free-trial{
+        height: 37px;
+        width: 150px;
+        background-color:white;
+        padding: 2px 2px;
+    }
+    #free-trial> a{
+        color: #303030;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        width: 480px;
+        justify-content: space-evenly;
+        /* border: 1px solid red; */
+    }
+    ul > li {
+        margin-right: 20px;
+    }
+    #search{
+        width: 10px;
+    }
+    img{
+        width: 120px;
+        height: 38px;
+        margin-right:40px;
+    }
+
+}
+
+@media screen and (min-width:68px) and (max-width:1153px){
+    .search-icon {
+        position: fixed;
+        top: 25px;
+        right: 75px;
+        cursor: pointer;
+        display: block;
+        /* border: 1px solid red; */
+    }
+    .fa-angle-down{
+        display: none;
+    }
+    #search{
+        position: fixed;
+        top: 95px;
+        width: 100%;
+        left: 0px;
+        padding-left: 40px;
+        color: white;
+        background-color: white;
+        font-size: 18px;
+        border: 1px solid #303030;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .fa-magnifying-glass{
+        position: fixed;
+        top: 95px;
+        font-size: 20px;
+        left: 15px;
+        z-index: 1;
+        /* border: 1px solid red; */
+        background-color: white;
+        color: black;
+    }
+    #product{
+        position: fixed;
+        color: black;
+        top: 140px;
+        left: 15px;
+    }
+    #solution{
+        position: fixed;
+        color: black;
+        top: 185px;
+        left: 15px;
+    }
+    #pricing a{
+        position: fixed;
+        color: black;
+        top: 245px;
+        left: 15px;
+    }
+    #learn{
+        position: fixed;
+        color: black;
+        top: 270px;
+        left: 15px;
+    }
+    #contact a{
+        position: fixed;
+        color: black;
+        top: 325px;
+        left: 15px;
+    }
+    #free-trial{
+        background-color: blue;
+        position: fixed;
+        top:365px;
+        left: 15px;
+        height: 70px;
+        width: 96%;
+        color: white;
+    }
+
+    #login {
+        background-color: white;
+        position: fixed;
+        top:450px;
+        left: 15px;
+        height: 70px;
+        width: 96%;
+        border: 2px solid blue;
+    }
+    #login a{
+        color: blue;
+        font-size: 18px;
+
+    }
+    img{
+        width: 160px;
+        height: 39px;
+        position: fixed;
+        left: 15px;
+        top: 15px;
+    }
+    .menu-btn i{
+        position: fixed;
+        top: 20px;
+        right: 15px;
+        font-size: 35px;
+        width: 40px;
+        cursor: pointer;
+        display: block;
+    }
+    #nav > div > ul{
+        display: none;
+        transition: all 0.8s ease;
+    }
+    #click:checked~.menu-btn i::before{
+        content: "\f00d";
+    }
+    #click:checked~ul{
+        display: block;
+    }
+
+    #right-nav{
+        display: none;
+        transition: all 0.8s ease;
+    }
+
+    #click:checked ~ #right-nav{
+        display: block;
+    }
+}   
+
+@media screen and (min-width:68px) and (max-width:249px){
+    #nav{
+        position: fixed;
+        right: 0px;
+        left: 0px;
+        border: 1px solid black;
+        background-color: #303030;
+        /* padding: 5px; */
+        height: 80px;
+    }
+    .menu-btn i{
+        position: fixed;
+        top: 50px;
+        left: 55px;
+        font-size: 25px;
+        width: 50px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        display: block;
+    }
+    img{
+        width: 100px;
+        height: 30px;
+        position: fixed;
+        left: 15px;
+        top: 15px;
+    }
+    .search-icon {
+        position: fixed;
+        top: 50px;
+        left: 25px;
+        cursor: pointer;
+        display: block;
+        /* border: 1px solid red; */
+    }
+}
+
