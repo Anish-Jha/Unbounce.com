@@ -1,8 +1,11 @@
 let search = ()=>{
     let input = document.getElementById("search").value;
-    console.log("hello")
+    console.log(input)
 }
 
 let startFree =()=>{
     window.location.href="";
 }
+
+
+// for product section
