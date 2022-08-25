@@ -161,3 +161,14 @@
   font-family: "source sans pro", sans-serif;
   padding: 20px 30px;
 }
+
+#landing_page-video1 > video {
+  border: 1px solid blue;
+  margin-left: 50px;
+}
+#landing_page-video1 > div {
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 100px;
+  width: 80%;
+}
