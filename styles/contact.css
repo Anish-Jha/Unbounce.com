@@ -112,7 +112,7 @@ button:hover{
 #heading>p{
     color: white;
 }
-#contact{
+#cont{
     display: flex;
     width: 100%;
     height: auto;
@@ -120,18 +120,18 @@ button:hover{
     justify-content: center;
     gap: 40px;
 }
-#contact>div{
+#cont>div{
     height: 400px;
     padding: 5px;
 }
-#contact>div:nth-child(1){
+#cont>div:nth-child(1){
  width: 33%;
 }
-#contact>div:nth-child(2){
+#cont>div:nth-child(2){
     width: 25%;
     margin-left: 20px;
 }
-#contact>div:nth-child(3){
+#cont>div:nth-child(3){
     width: 15%;
 }
 .suB1{

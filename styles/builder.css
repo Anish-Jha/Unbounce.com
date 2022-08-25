@@ -1,0 +1,248 @@
+body{
+    overflow-x: hidden;
+}
+#main{
+    top: 0;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+#sUB{
+    width: 50%;
+    height: auto;
+}
+#sUB>#ight{
+    margin: auto;
+    width: 53%;
+    margin-top: 15%;
+}
+input{
+    width: 100%;
+    height: 35px;
+    font-family:"Source Sance Pro",sans-serif;
+    border: rgb(211, 204, 204) 0.5px solid;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid blue;
+}
+#check{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+#ight{
+    font-family: "Source Sance Pro",sans-serif;
+}
+#submit{
+    width: 100%;
+    background: blue;
+    font-family: "Source Sance Pro",sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 57px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#hUB{
+    width: 50%;
+}
+#hUB>img{
+    width: 100%;
+    height: auto;
+}
+#submit:hover{
+    background-color: #4993ff;
+}
+#head{
+    font-size: 20px;
+    font-family:"Source Sance Pro",sans-serif;
+    line-height: 31.5px;
+    color: #606060;
+    padding: 10px 0 0 0;
+    margin-left: 0;
+}
+#empty{
+    width: 100%;
+    border: #EDEDED 0.5px solid;
+    margin-bottom: 15px;
+}
+.if{
+font-family:"Source Sance Pro",sans-serif;
+font-size: 13px;
+line-height: 21px;
+text-align: left;
+color: #AAAAAA;
+display: inline-block;
+margin-bottom: 25px;
+}
+.if>a{
+    color: blue;
+    font-weight: 700;
+    text-decoration: none;
+}
+.if>a:hover{
+    text-decoration:underline;
+}
+#ik{
+    display: flex;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    width: 100%;
+    border-radius: 2px;
+    font-family:"Source Sance Pro",sans-serif;
+    line-height: 21px;
+    cursor: pointer;
+    color: #6D6D6D;
+    font-weight:bold;
+    font-size: 18px;
+    justify-content: center;
+}
+#ik>img{
+    width: 30px;
+    height: 30px;
+    padding: 15px 10px 0px 15px;
+}
+label{
+    font-family:"Source Sance Pro",sans-serif;
+    font-size: 14px; 
+    color: #606060;
+}
+
+/* responsive */
+
+@media all and (min-width:300px) and (max-width:1000px){
+    body{
+        overflow-x: hidden;
+    }
+    #main{
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+        margin: auto;
+    }
+    #sUB{
+        width: 70%;
+        height: auto;
+        margin:auto;
+    }
+    #hUB{
+        display: none;
+    }
+    #sUB>#ight{
+        margin: auto;
+        width: 60%;
+        margin-top: 15%;
+    }
+    #ight>#error{
+        width: 20%;
+        background-color: #da9595;
+        color: red;
+        font-size: 12px;
+    }
+    input{
+        width: 100%;
+        height: 35px;
+        font-family:"Source Sance Pro",sans-serif;
+        border: rgb(211, 204, 204) 0.5px solid;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        display: block;
+    }
+    input:focus{
+        outline: none;
+        border: 2px solid blue;
+    }
+    #check{
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    #ight{
+        font-family: "Source Sance Pro",sans-serif;
+    }
+    #submit{
+        width: 100%;
+        background: blue;
+        font-family: "Source Sance Pro",sans-serif;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        height: 57px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    #submit:hover{
+        background-color: #4993ff;
+    }
+    #head{
+        font-size: 20px;
+        font-family:"Source Sance Pro",sans-serif;
+        line-height: 31.5px;
+        color: #606060;
+        padding: 10px 0 0 0;
+        margin-left: 0;
+    }
+    #empty{
+        width: 100%;
+        border: #EDEDED 0.5px solid;
+        margin-bottom: 15px;
+    }
+    .if{
+    font-family:"Source Sance Pro",sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: left;
+    color: #AAAAAA;
+    display: inline-block;
+    margin-bottom: 25px;
+    }
+    .if>a{
+        color: blue;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .if>a:hover{
+        text-decoration:underline;
+    }
+    #ik{
+        display: flex;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        width: 100%;
+        border-radius: 2px;
+        font-family:"Source Sance Pro",sans-serif;
+        line-height: 21px;
+        cursor: pointer;
+        color: #6D6D6D;
+        font-weight:bold;
+        font-size: 18px;
+        justify-content: center;
+    }
+    #ik>img{
+        width: 30px;
+        height: 30px;
+        padding: 15px 10px 0px 15px;
+    }
+    label{
+        font-family:"Source Sance Pro",sans-serif;
+        font-size: 14px; 
+        color: #606060;
+    }
+}
+@media all and (max-width:299px){
+    body{
+        display: none;
+    }
+}
