@@ -42,7 +42,7 @@
         <div id="off_20">
           <!-- <div><h2>$90</h2></div>
                 <div><p>Get 20% off for 3 months</p></div> -->
-          <h2>$72</h2>
+          <h2>$<span>72</span></h2>
           <p>Get 20% off for 3 months</p>
         </div>
         <ul>
@@ -51,7 +51,7 @@
           <li>Up to 20,000 visitors</li>
           <li>1 domain</li>
         </ul>
-        <button>Start building for free</button>
+        <button onclick="monthlyOffer()">Start building for free</button>
       </div>
       <div id="cont_2">
         <img
@@ -60,14 +60,14 @@
         />
         <h3>Optimize</h3>
         <div id="usd">
-          <div><h1>$135</h1></div>
+          <div id="usdofmonth2"><h1>$<span>90</span></h1></div>
           <div><p>USD/mo</p></div>
         </div>
         <!-- <h1>$72</h1><p>USD/mo</p> -->
         <div id="off_20">
           <!-- <div><h2>$90</h2></div>
                 <div><p>Get 20% off for 3 months</p></div> -->
-          <h2>$108</h2>
+                <h2 id="h2">$<span>108</span></h2>
           <p>Get 20% off for 3 months</p>
         </div>
         <ul>
@@ -86,14 +86,14 @@
         />
         <h3>Accelerate</h3>
         <div id="usd">
-          <div><h1>$225</h1></div>
+          <div id="usdofmonth3"><h1>$<span>225</span></h1></div>
           <div><p>USD/mo</p></div>
         </div>
         <!-- <h1>$72</h1><p>USD/mo</p> -->
         <div id="off_20">
           <!-- <div><h2>$90</h2></div>
                 <div><p>Get 20% off for 3 months</p></div> -->
-          <h2>$180</h2>
+                <h2 id="h3">$<span>180</span></h2>
           <p>Get 20% off for 3 months</p>
         </div>
         <ul>
@@ -253,27 +253,5 @@
   </body>
 </html>
 
-<script>
-
-function giveYearly(){
-  window.location.href="yearly.html"
-  // let usd=document.getElementById("#switch");
-  // let usdMonth=document.querySelector("#usdofmonth>span");
-
-  // if(usd.checked==true){
-  //   usdMonth.innerHTML="81"
-  // }else{
-  //   usdMonth.innerHTML="90"
-  // }
-
-
-  // function toggleCheck() {
-  // if(document.getElementById("myCheckbox").checked === true){
-  //   document.getElementById("aLink").style.display = "block";
-  // } else {
-  //   document.getElementById("aLink").style.display = "none";
-  // }
-}
-
-
+<script src="./scripts/pricing.js">
 </script>
