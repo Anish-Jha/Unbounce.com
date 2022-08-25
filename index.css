@@ -6,7 +6,7 @@
 .top-section {
   background-color: rgb(47, 46, 46);
   height: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .top-section > div {
   display: flex;
@@ -91,33 +91,35 @@
 
 /* Mid-Section-top */
 #top_container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 80%;
   margin: auto;
   margin-top: 5%;
   text-align: center;
 }
 #top_header {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-bottom: 50px;
 }
 #top_header > h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   color: #303030;
   padding: 40px;
-  /* font-family: sans-serif; */
+  font-family: "barlow semi condensed", sans-serif;
+  font-weight: 50;
 }
 #top_header > p {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   font-size: 18px;
   line-height: 28px;
-  width: 70%;
+  width: 75%;
   margin: auto;
   color: #7e7e7e;
+  font-family: "source sans pro", sans-serif;
 }
 #process_details {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin: auto;
   height: auto;
   width: 100%;
@@ -127,7 +129,7 @@
   justify-content: space-around;
 }
 #process_details > div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: auto;
   margin: auto;
   margin-top: 30px;
@@ -150,7 +152,7 @@
   font-weight: lighter;
 }
 #process_details > div > div > p {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   color: #9c9c9c;
   width: 80%;
   font-family: "source sans pro", sans-serif;
@@ -163,12 +165,219 @@
 }
 
 #landing_page-video1 > video {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-left: 50px;
 }
 #landing_page-video1 > div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: auto;
   margin-top: 100px;
   width: 80%;
+}
+
+/* get more customer section */
+.getmorecustomer {
+  /* border: 1px solid yellow; */
+  width: 100%;
+  height: auto;
+}
+#morecustomer-container {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  height: auto;
+}
+#morecustomer-container > div {
+  /* border: 1px solid brown; */
+  margin-bottom: 20%;
+}
+#morecustomer-container > div:nth-child(1) > p {
+  /* border: 1px solid black; */
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  color: #303030;
+  line-height: 70px;
+  font-size: 50px;
+  font-family: "barlow semi condensed", sans-serif;
+  font-weight: inherit;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+#morecustomer-container > div:nth-child(1) > p + p {
+  width: 74%;
+  margin: auto;
+  color: #525151;
+  /* text-decoration: none solid rgb(48, 48, 48); */
+  font-family: "source sans pro", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 0.8rem;
+}
+#customer_container {
+  /* border: 3px solid lime; */
+  width: 100%;
+  margin: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 20px;
+}
+#customer_container > div {
+  margin: auto;
+  width: 90%;
+  padding-bottom: 70px;
+  /* border: 3px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#customer_container > div > div > img {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin-top: -120px;
+  margin-left: 20px;
+}
+#more_title {
+  /* border: 1px solid red; */
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 55px;
+}
+#customer_container > div > div > p {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 87%;
+  font-family: "source sans pro", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+#customer_container > div > div > p + p {
+  margin-bottom: 70px;
+  display: block;
+  color: #757070;
+  /* padding-bottom: 50px; */
+}
+
+#customer_container > div > span {
+  /* border: 1px solid salmon; */
+  padding: 10px 20px;
+  color: #303030;
+  margin-left: 10px;
+  font-family: "source sans pro", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+#customer_container > div > span:hover {
+  cursor: pointer;
+  color: #0033ff;
+}
+
+/* end of get more customer */
+
+/* Director */
+
+#director {
+  /* border: 1px solid red; */
+  height: auto;
+  margin-top: -170px;
+  padding: 70px;
+  background-color: #f3f1ee;
+}
+.director_container {
+  /* border: 1px solid blue; */
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 20% 80%);
+  grid-auto-rows: auto;
+  gap: 10px;
+  justify-content: space-between;
+}
+.director_container > div > img {
+  width: 80%;
+  height: 50%;
+}
+.director_container > div > blockquote {
+  padding-top: 10px;
+  /* border: 2px solid salmon; */
+  width: 100%;
+  font-family: "barlow semi condensed", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: left;
+  color: #303030;
+  margin-bottom: 40px;
+}
+.director_container > div > small > strong {
+  font-family: "source sans pro", sans-serif;
+  font-size: 23.5263px;
+  font-weight: 700;
+  color: #303030;
+}
+.director_container > div > small {
+  font-family: "source sans pro", sans-serif;
+  line-height: 27px;
+  font-size: 23.5263px;
+  color: #383838;
+  margin-bottom: 20px;
+}
+.director_container > div > small + div > img {
+  padding-top: 30px;
+  width: 30%;
+}
+/* End of director section */
+
+/* bottom section  */
+
+#bottom_section {
+  background-color: #0033ff;
+  width: 100%;
+  height: auto;
+}
+#bottom_container {
+  color: #ffffff;
+  /* border: 1px solid red; */
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  gap: 80px;
+}
+#bottom_container > div > h3 {
+  font-family: "barlow semi condensed", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: left;
+  font-weight: normal;
+}
+#bottom_container > div > p {
+  font-family: "source sans pro", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  padding: 20px 0;
+  font-weight: normal;
+  /* border: 1px solid red; */
+  width: 80%;
+}
+#bottom_container > div > button {
+  font-family: "source sans pro", sans-serif;
+  background-color: #0033ff;
+  color: #ffffff;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+  padding: 20px;
+  margin: 30px 0px;
 }
