@@ -81,7 +81,7 @@
               </div>
               <span>→&nbsp;&nbsp;&nbsp;Create your pages</span>
             </div>
-            <div>
+            <div id="optimize">
               <div class="process_icon">
                 <iconify-icon icon="bi:shuffle" style="color: #03f;" width="30" height="30" rotate="270deg"></iconify-icon>
               </div>
@@ -108,7 +108,7 @@
             preload="auto"
             loop="loop"
             autoplay="auto"
-            muted
+            muted="muted"
             src="data/Unbounce - The Landing Page Builder & Platform.mp4"
           ></video>
         </div>
@@ -149,7 +149,7 @@
             </div>
             <span>→&nbsp;&nbsp;&nbsp;  For social media </span>
           </div>
-          <div>
+          <div id="emailmarketing">
             <div>
               <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Mask-group-5.png.webp" alt="">
             </div>
@@ -194,13 +194,19 @@
               </div>
               <div id="gethelp_content">
                 <div id="gethelp_video">
-                  <video
-                  width="100%"
+                  <!-- <video
+                  controls="controls"
                   preload="auto"
                   loop="loop"
                   autoplay="auto"
+                  width="90%"
                   src="data/video.mp4"
-                ></video>
+                ></video> -->
+                <video width="100%" autoplay="auto" preload="auto" loop="loop">
+                  <source src="data/video.mp4" type="video/mp4">
+                  
+                  
+                </video>
                 </div>
                 <div id="gethelp">
                   <div>
@@ -280,14 +286,14 @@ supportive marketers, and loads of educational resources to help you grow your b
 
 <div id="bottom_section">
   <div id="bottom_container">
-      <div>
-        <h3>Start building pages</h3>
+      <div id="startbuilding">
+        <h3 id="start">Start building pages</h3>
         <h3>for free</h3>
         <p>Build landing pages, popups, and sticky bars with your free 14-day trial. Cancel anytime.</p>
         <button>Start building pages</button>
       </div>
-      <div>
-        <h3>Start writing with AI</h3>
+      <div id="startwriting">
+        <h3 id="start" >Start writing with AI</h3>
         <h3>—also free</h3>
         <p>Use AI to instantly generate copy for your marketing campaigns. No credit card required.</p>
         <button>Start writing with AI</button>
