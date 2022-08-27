@@ -1,0 +1,13 @@
+.line-height-8 {
+  line-height: 80px;
+}
+
+.button {
+  padding: 20px 40px;
+  background: #0033ff;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
