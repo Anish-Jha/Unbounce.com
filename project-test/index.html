@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>unbounce</title>
-    <link rel="stylesheet" href="index.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./styles/index25.css">
+
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <script src="https://kit.fontawesome.com/5b7fbbfbc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/footer.css">
+
   </head>
   <body>
+    <div id="navbar">
+
+    </div>
     <div class="top-section">
       <div>
         <div id="top_sec-details">
@@ -48,7 +56,7 @@
           <div id="process_details">
             <div>
               <div class="process_icon">
-                <img
+                <img 
                   src="https://unbounce.com/photos/smartbuilder_icon_updated_stroke.svg"
                   alt=""
                 />
@@ -66,7 +74,7 @@
             </div>
             <div>
               <div class="process_icon">
-                <img
+                <img 
                   src="https://unbounce.com/photos/Smart-Copy-black-icon.svg"
                   alt=""
                 />
@@ -79,7 +87,7 @@
                   for anything—like landing pages, ads, emails—in seconds.
                 </p>
               </div>
-              <span>→&nbsp;&nbsp;&nbsp;Write your copy</span>
+              <span>→&nbsp;&nbsp;&nbsp;Create your pages</span>
             </div>
             <div id="optimize">
               <div class="process_icon">
@@ -184,6 +192,7 @@
         </div>
        </div>
       <!-- End of Director section -->
+      
       <!-- we can help -->
       <div id="gethelp-section">
         <div id="gethelp_container">
@@ -194,18 +203,9 @@
               </div>
               <div id="gethelp_content">
                 <div id="gethelp_video">
-                  <!-- <video
-                  controls="controls"
-                  preload="auto"
-                  loop="loop"
-                  autoplay="auto"
-                  width="90%"
-                  src="data/video.mp4"
-                ></video> -->
+               
                 <video width="100%" autoplay="auto" preload="auto" loop="loop">
                   <source src="data/video.mp4" type="video/mp4">
-                  
-                  
                 </video>
                 </div>
                 <div id="gethelp">
@@ -213,13 +213,13 @@
                     <iconify-icon id="icon-basket" icon="fluent:cart-20-regular" style="color: #1745ff;" width="60" height="60"></iconify-icon>
                     <p id="help_title">Sell products and services</p>
                     <p>Grow your online store with landing pages built to sell. Connect ecommerce tools to showcase your products and accept payments right on your page, simplifying your buyer journey.</p>
-                    <a href=""><span>→&nbsp;&nbsp;&nbsp; Amplify your sales</span></a>
+                    <a class ="help-masai" href="#"><span>→&nbsp;&nbsp;&nbsp; Amplify your sales</span></a>
                   </div>
                   <div id="collectlead">
                     <iconify-icon id="icon-basket" icon="fluent:target-arrow-20-regular" style="color: #1745ff;" width="50" height="50"></iconify-icon>
                     <p id="help_title">Collect leads and signups</p>
                     <p>Expand your email list, fill your sales pipeline, and get new customers. With form-based landing pages, you can capture visitor information and keep your marketing funnel full.</p>
-                    <a href=""><span>→&nbsp;&nbsp;&nbsp; Increase your leads</span></a>
+                    <a class ="help-masai" href="#"><span>→&nbsp;&nbsp;&nbsp; Increase your leads</span></a>
                   </div>
                 </div>
                 
@@ -238,18 +238,18 @@
               <iconify-icon id="icon-basket" icon="fluent:cart-20-regular" style="color: #1745ff;" width="60" height="60"></iconify-icon>
               <p id="help_title">Get your business online</p>
               <p>Create landing pages and marketing campaigns that get your small business noticed. Best part? You can do it all yourself—without copywriters, designers, or developers.</p>
-              <a href=""><span>→&nbsp;&nbsp;&nbsp; Promote your business</span></a>
+              <a class="adv-masai" href="#"><span>→&nbsp;&nbsp;&nbsp; Promote your business</span></a>
             </div>
             <div id="marketing">
               <iconify-icon id="icon-basket" icon="fluent:target-arrow-20-regular" style="color: #1745ff;" width="50" height="50"></iconify-icon>
               <p id="help_title">Collect leads and signups</p>
               <p>Once you get clients, keep ’em. With customizable landing page templates and smart optimization features, you can launch high-converting campaigns at mad scale.</p>
-              <a href=""><span>→&nbsp;&nbsp;&nbsp; Wow your clients</span></a>
+              <a class="adv-masai" href="#"><span>→&nbsp;&nbsp;&nbsp; Wow your clients</span></a>
             </div>
           </div>
         
           <div id="adv_image_container">
-              <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Group-29610-1.png.webp" alt="">
+              <img  id ="adv-img-1" src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Group-29610-1.png.webp" alt="">
           </div>
         </div>
 
@@ -270,16 +270,14 @@
 supportive marketers, and loads of educational resources to help you grow your business the right way.
     </div>
     <div id="catalog_buttons">
-      <button>Learn the basics</button>
-      <button>Explore our resources</button>
-      <button>Join our community</button>
-      <button>Get support</button>
+      <button class="cat-btn">Learn the basics</button>
+      <button class="cat-btn">Explore our resources</button>
+      <button class="cat-btn">Join our community</button>
+      <button class="cat-btn">Get support</button>
     </div>
   </div>
 
 </div>
-
-
 
 <!-- catalog End -->
 <!-- bottom section -->
@@ -300,10 +298,20 @@ supportive marketers, and loads of educational resources to help you grow your b
       </div>
   </div>
 </div>
-
-
-
-
+<div id="footer-section"> </div>
 
   </body>
 </html>
+
+<script type="module">
+  import navbar from "./scripts/navbar.js";
+
+  document.getElementById("navbar").innerHTML = navbar();
+</script>
+<script type="module">
+  import footer from "./scripts/footer.js";
+  
+  document.getElementById("footer-section").innerHTML = footer();
+  
+  </script>
+<script src="./scripts/scroll.js"></script>

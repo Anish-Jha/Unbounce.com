@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: source sans pro, sans-serif;
 }
 
 .top-section {
@@ -400,6 +399,9 @@
   display: block;
   /* margin: 0 auto 1.67rem; */
 }
+
+
+/* ....................................................................................................... */
 /* get help section */
 #gethelp-section {
   /* border: 2px solid saddlebrown; */
@@ -468,7 +470,7 @@
   text-decoration: none;
 }
 #help_title + p,
-a {
+.help-masai {
   /* border: 1px solid red; */
   font-family: "source sans pro", sans-serif;
   font-size: 16px;
@@ -480,14 +482,16 @@ a {
   color: #9c9c9c;
   width: 75%;
 }
-#gethelp > div > a,
-#advantagesdetails > div > a {
+
+
+#gethelp > div > .adv-masai,
+#advantagesdetails > div > .adv-masai {
   text-decoration: none;
   color: #080808;
   font-size: 20px;
   font-weight: 600;
 }
-#gethelp > div > a:hover {
+#gethelp > div > .adv-masai:hover {
   color: #0033ff;
 }
 #advantages2 {
@@ -495,7 +499,7 @@ a {
   padding-bottom: 10%;
 }
 
-#adv_image_container > img {
+#adv_image_container > #adv-img-1 {
   width: 100%;
 }
 .advantages2-container {
@@ -540,7 +544,7 @@ a {
   gap: 20px;
   width: 90%;
 }
-#catalog_buttons > button {
+#catalog_buttons > .cat-btn {
   border: 2px solid black;
   font-family: "source sans pro", sans-serif;
   font-size: 20px;
@@ -551,11 +555,14 @@ a {
   cursor: pointer;
 }
 
-#catalog_buttons > button:hover {
+#catalog_buttons > .cat-btn:hover {
   background-color: #303031;
   color: #f9f8f7;
 }
 
+
+
+/* ................................................................................................. */
 @media all and (min-width: 700px) and (max-width: 900px) {
   .top-section {
     width: 100%;
@@ -649,87 +656,5 @@ a {
     grid-template-rows: repeat(2, auto);
     justify-content: space-around;
     gap: 80px;
-  }
-}
-
-@media all and (min-width: 300px) and (max-width: 700px) {
-  .top-section {
-    width: 100%;
-  }
-  .top-section > div {
-    display: block;
-    margin-left: -5%;
-  }
-  #top_sec-img > img {
-    margin-left: 50px;
-  }
-  #process_details {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-    justify-content: space-around;
-  }
-
-  #gethelp > div > a,
-  #advantagesdetails > div > a,
-  #help_title + p,
-  a {
-    font-size: 15px;
-  }
-  #customer_container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-  #customer_container > div {
-    margin-top: 60px;
-  }
-  #customer_container > div > p {
-    font-size: 15px;
-  }
-  #video1_container > video {
-    border: 1px solid blue;
-    margin-left: -5%;
-    width: 100%;
-  }
-  #director {
-    margin-top: 5%;
-  }
-  .director_container {
-    display: block;
-  }
-  .director_container > div > blockquote {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .director_container > div > small + div > img {
-    width: 100%;
-  }
-
-  #gethelp_content,
-  .advantages2-container {
-    width: 100%;
-    margin: auto;
-    margin-left: 0px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
-  #bottom_container {
-    color: #ffffff;
-    /* border: 1px solid red; */
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-    justify-content: space-around;
-    gap: 80px;
-  }
-
-  #catalog_buttons {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto);
   }
 }

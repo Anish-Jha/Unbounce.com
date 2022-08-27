@@ -61,7 +61,5 @@ form.addEventListener("submit", function (e) {
             return;
             }
     })
-    // if(Result === false){
-    //     alert("User Doesn't Exist");
-    // }
+   
 })

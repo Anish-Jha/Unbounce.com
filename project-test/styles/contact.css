@@ -39,6 +39,7 @@ font-family: "barlow semi condensed", sans-serif;
 color: #303030;
 font-size: 30px;
 line-height: 36px;
+padding-top: 10px;
 }
 #main>div>.bottom{
     text-align: left;
@@ -68,7 +69,7 @@ background-color: green;
 #main>div:nth-child(4)>span{
 background-color: pink;
 }
-button{
+.btn-cont-1{
     border: 2.5px solid blue;
     background-color: transparent;
     color: blue;
@@ -79,19 +80,19 @@ button{
     font-weight: 600;
     font-family:"source sans pro", sans-serif;
 }
-div:nth-child(1)>button{
+div:nth-child(1)>.btn-cont-1{
     margin: 22% 0 0 22%;
 }
-div:nth-child(2)>button{
+div:nth-child(2)>.btn-cont-1{
     margin: 11% 0 0 22%;
 }
-div:nth-child(3)>button{
+div:nth-child(3)>.btn-cont-1{
     margin: 1% 0 0 22%;
 }
-div:nth-child(4)>button{
+div:nth-child(4)>.btn-cont-1{
     margin: 11% 0 0 22%;
 }
-button:hover{
+.btn-cont-1:hover{
     background-color: blue;
     color: white;
 }
@@ -137,7 +138,7 @@ button:hover{
 .suB1{
     display: flex;
 }
-.suB1>a>img{
+.suB1 > .cont-andy > .abc-masai{
     width: 200px;
 }
 .idk{
