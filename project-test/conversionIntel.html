@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unbounce/Conversion Intelliegence</title>
     <script src="https://kit.fontawesome.com/9c6a94074f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <style>
         body{
             margin: 0;
@@ -16,22 +18,26 @@
         #ci-1-div{
             display: flex;
             width: 100%;
-
+            /* margin-top: 100px; */
             background-color: #303030;
         }
         #ci-1-topline{
             display: flex;
             align-items: center;
-            font-family:'Arial Narrow', Arial, sans-serif;
-            font-size: 22px;
-            font-weight: lighter;
+            /* font-weight: lighter; */
             color: white;
             margin-top: 50px;
+            margin-bottom: 25px;
+            /* font-weight: 100; */
             /* border: 1px solid red; */
         }
-
+        
+        
         #ci-1-topline h3{
             letter-spacing: 1px;
+            font-size: 20px;
+            font-family:'Arial Narrow', Arial, sans-serif;
+            font-weight: 100;
         }
 
         #line{
@@ -57,20 +63,23 @@
 
         #ci-1-div h1{
             font-family:'Arial Narrow', Arial, sans-serif;
-            font-size: 50px;
+            font-size: 63px;
             color: white;
             margin-top: 10px;
             letter-spacing: 5px;
             font-weight: 100;
+            /* border: 1px solid red; */
         }
 
         #ci-1-div p{
             color: white;
             line-height: 28px;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 100;
             margin-bottom: 50px;
             letter-spacing: 1px;
+            margin-top: 30px;
+            opacity: 0.7;
         }
 
         #ci-1-button1{
@@ -118,6 +127,10 @@
             color: #303030;
             font-weight: 100;
         }
+        
+        /* #ci-2-div>div>p{
+
+        } */
 
         #ci-2-div>div{
             color: #555555;
@@ -125,6 +138,7 @@
             margin: auto;
             line-height: 32px;
             font-size: 18px;
+            margin-top: 30px;
         }
 
         #ci-3-div{
@@ -136,6 +150,7 @@
             grid-template-columns: repeat(3,1fr);
             justify-content: space-between;
             gap: 10px;
+            margin-top: 30px;
         }
 
         #ci-3-div>div{
@@ -152,7 +167,7 @@
             height: 40px;
             margin-right: 20px;
             position: relative;
-            top: 20px;
+            /* top: 10px; */
         }
 
         #pvl{
@@ -160,7 +175,7 @@
             height: 40px;
             margin-right: 20px;
             position: relative;
-            top: 20px;
+            /* top: 20px; */
 
         }
 
@@ -184,9 +199,11 @@
             width: 80%;
             margin: auto;
             margin-top: 100px;
+
         }
         #ci-4-div img{
             width: 160px;
+            margin-top: 30px;
         }
 
         #ci-4-div>div:nth-child(2){
@@ -201,6 +218,7 @@
             font-size: 32px;
             line-height: 46px;
             letter-spacing: 1px;
+            margin-bottom: 35px;
         }
 
         #ci-4-div :nth-child(2) h3{
@@ -226,6 +244,8 @@
             letter-spacing: 1px;
             font-size: 42px;
             font-weight: 100;
+            /* border: 1px solid red; */
+            margin-top: 30px;
         }
 
         #ci-5-div button{
@@ -258,6 +278,9 @@
             font-size: 60px;
             color: #303030;
             font-weight: 100;
+            /* border: 1px solid red; */
+            /* width: 70%; */
+            margin-bottom: 30px;
         }
 
         #ci-6-div p{
@@ -333,6 +356,7 @@
             color: white;
             font-size: 26px;
             font-weight: 100;
+            margin-bottom: 20px;
         }
 
         #ci-7-body-left p{
@@ -344,7 +368,8 @@
 
         #ci-7-body-left h3{
             color: white;
-            font-size: 18px;
+            font-size: 16px;
+            margin-top: 20px;
         }
 
         #ci-7-body-right{
@@ -371,6 +396,8 @@
             letter-spacing: 1px;
             font-size: 42px;
             font-weight: 100;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
 
         #ci-8-div button{
@@ -448,6 +475,8 @@
             font-size: 42px;
             font-weight: 100;
             color: white;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
 
         #ci-10-div button{
@@ -1360,14 +1389,22 @@
             line-height: 24px;
             font-size: 16px;
         }
-        }
+    }
+
+    #space{
+        height: 80px;
+    }
 
     </style>
 </head>
 <body>
+<div id="navbar">
 
+</div>
+<div id="space">
+
+</div>
     <!-- first div start-->
-
     <div id="ci-1-div">
         <div id="ci-1-left">
             <div id="ci-1-topline">
@@ -1561,6 +1598,20 @@
         <button>Start my free trial</button>
     </div>
 
-    
+   <div id="footer-section"></div> 
 </body>
 </html>
+
+<script type="module">
+    import navbar from "./scripts/navbar.js";
+  
+    document.getElementById("navbar").innerHTML = navbar();
+  </script>
+<script type="module">
+    import footer from "./scripts/footer.js";
+    
+    document.getElementById("footer-section").innerHTML = footer();
+    
+ </script>
+
+<script src="./scripts/scroll.js"> </script>

@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/contact.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/9c6a94074f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <style>
+        #space{
+            height: 150px;
+        }
+    </style>
 </head>
 <body>
-    <nav></nav>
+    <div id="navbar"></div>
+    <div id="space">
+
+    </div>
         <!-- heading -->
         <h1>We’d love to hear from you</h1>
         <p id="suB">Whether you’re curious about features, a free trial, or even press—we’re ready to answer any and all questions.</p>
@@ -18,28 +29,28 @@
                 <span></span>
                 <p class="head">Sales</p>
                 <p class="bottom">Wondering if Unbounce is the right tool for your business? Chat with our team to see if there’s a fit.</p>
-                <button>Let's Chat</button>
+                <button class="btn-cont-1">Let's Chat</button>
             </div>
 
             <div>
                 <span></span>
                 <p class="head">Support</p>
                 <p class="bottom">Need a hand using Unbounce or managing your account? Chat with a real, live human or self-serve using our Help Center.</p>
-                <button>Get Support</button>
+                <button class="btn-cont-1">Get Support</button>
             </div>
 
             <div>
                 <span></span>
                 <p class="head">Media</p>
                 <p class="bottom">We love working with journalists to share compelling stories. Send us a note and our PR and Communications Manager will be in touch.</p>
-                <button>Get in touch</button>
+                <button class="btn-cont-1" >Get in touch</button>
             </div>
 
             <div>
                 <span></span>
                 <p class="head">Partnerships</p>
                 <p class="bottom">We’re into co-marketing with awesome brands. Fill out the form here, and our Partnerships Manager will circle back.</p>
-                <button>Let's chat</button>
+                <button class="btn-cont-1">Let's chat</button>
             </div>
             
         </div>
@@ -53,14 +64,14 @@
         <div id="cont">
             <div>
                 <div class="suB1">
-                    <a href="https://www.google.com/maps?q=400-401+West+Georgia+St.+Vancouver,+BC,+Canada,+V6B+5A1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjFhsjB2s7iAhUCPH0KHT8nCyIQ_AUIECgB" target="_blank"><img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/contact_map-vancouver.png.webp" alt=""></a>
+                    <a class ="cont-andy" href="https://www.google.com/maps?q=400-401+West+Georgia+St.+Vancouver,+BC,+Canada,+V6B+5A1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjFhsjB2s7iAhUCPH0KHT8nCyIQ_AUIECgB" target="_blank"><img class="abc-masai" src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/contact_map-vancouver.png.webp" alt=""></a>
                     <div class="idk">
                         <p class="idc">Vancouver</p>
                         <p class="ight">500-401 West Georgia St. Vancouver, BC, Canada, V6B 5A1</p>
                     </div>
                 </div>
                 <div class="suB1">
-                    <a href="https://unbounce.com/contact-us/"><img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/contact_map-berlin.png.webp" alt=""></a>
+                    <a class ="cont-andy" href="https://unbounce.com/contact-us/"><img class="abc-masai" src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/contact_map-berlin.png.webp" alt=""></a>
                 <div class="idk">
                     <p class="idc">Berlin</p>
                     <p class="ight">Unbounce Germany GmbH (Apartment 1) c/o Factory Works GmbH Rheinsberger Str. 76/77 10115 Berlin</p>
@@ -85,6 +96,20 @@
             </div>
         </div>
         </div>
+        <div id="footer-section"></div>
 </body>
-<script src="/annoyed-geese-7107/navbar/script/navbar.js"></script>
 </html>
+
+<script type="module">
+    import navbar from "./scripts/navbar.js";
+  
+    document.getElementById("navbar").innerHTML = navbar();
+  </script>
+<script type="module">
+    import footer from "./scripts/footer.js";
+    
+    document.getElementById("footer-section").innerHTML = footer();
+    
+ </script>
+
+<script src="./scripts/scroll.js"> </script>

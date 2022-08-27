@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/yearly.css" />
+    <link rel="stylesheet" href="./styles/footer.css">
   </head>
 
   <body>
@@ -250,6 +251,11 @@
         
 
       </details>
+
+
+      <div id="footer-section">
+
+      </div>
   </body>
 </html>
 
@@ -260,3 +266,11 @@
     }
 
 </script>
+<script type="module">
+  import footer from "./scripts/footer.js";
+  
+  document.getElementById("footer-section").innerHTML = footer();
+  
+</script>
+
+<script src="./scripts/scroll.js"> </script>

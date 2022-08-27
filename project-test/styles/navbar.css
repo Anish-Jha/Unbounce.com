@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    /* background: #303030; */
+
 }
 
 #nav{
@@ -10,43 +12,57 @@
     right: 0px;
     left: 0px;
     /* border: 1px solid black; */
-    background: #303030;
+    background: white;
     padding: 5px;
     height: 80px;
 }
+
 #nav > div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 82%;
     margin: auto;
+    /* border: 1px solid red; */
 }
-ul > .dropdown > #product{
+#ul-class > .dropdown > #product{
     padding: 15px 0px 15px 0px;
 }
-ul > .dropdown1 > #solution{
+#ul-class > .dropdown1 > #solution{
     padding: 15px 0px 15px 0px;
 }
-ul > .dropdown2 > #learn{
+#ul-class > .dropdown2 > #learn{
     padding: 15px 0px 15px 0px;
 }
-ul{
+#ul-class{
     display: flex;
     list-style: none;
     width: 480px;
     justify-content: space-around;
+    /* border: 1px solid red; */
 }
-ul>li{
+#ul-class>.nav-item{
     /* border: 1px solid red; */
     padding: 15px 0px 15px 0px;
 }
-ul > #pricing, ul>#contact{
-    border: 2px solid #303030;
+#ul-class > #pricing{
     border-top: none;
     border-left: none;
     border-right: none;
 }
-ul > #pricing:hover, ul>#contact:hover{
+#ul-class > #contact{
+    border: 2px solid transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#ul-class > #pricing:hover{
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#ul-class > #contact:hover{
     border: 2px solid white;
     border-top: none;
     border-left: none;
@@ -57,26 +73,24 @@ ul > #pricing:hover, ul>#contact:hover{
     height: 39px;
     margin-right:-20px;
     cursor: pointer;
+    /* border: 1px solid red; */
 }
 #login{
     width: 71.61px;
     height: 42px;
-    background-color:#303030;
-    border-color: white;
     padding: 10px 0px 10px 0px;
+    cursor: pointer;
 }
 #login:hover{
     background-color: grey;
-    border: grey;
 
 }
-#login a{
-    color: white;
-}
+
 #free-trial{
+    cursor: pointer;
     height: 44px;
     width: 157px;
-    background-color:white;
+    /* background-color:white; */
     padding: 5px 5px;
     border-radius: 5px;
     font-size: 14px;
@@ -86,7 +100,6 @@ ul > #pricing:hover, ul>#contact:hover{
 }
 #free-trial:hover{
     background-color: grey;
-    color: white;
 }   
 
 .nav-left-btn a{
@@ -95,58 +108,52 @@ ul > #pricing:hover, ul>#contact:hover{
     text-decoration: none;
     font-family: sans-serif;
 }
+
 #pricing > a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
+
+
 #contact > a{
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 .nav-item{
     color:#303030;
-    color: white;
     font-size: 18px;
-    /* font-weight: bold; */
     cursor: pointer;
 }
 #solution{
     color:#303030;
-    color: white;
+    /* color: white; */
 }
 #search{
     height: 25px;
-    color: white;
-    background-color: #303030;
     border: none;
     width: 100px;
+    outline: none;
 }
 .fa-angle-down{
     font-size: 12px;
     font-weight: bold;
-    /* border: 1px solid red; */
-    /* padding: 10px; */
 
 }
 #serach-btn{
     border:none;
     cursor: pointer;
     font-size: 18px;
-    background: #303030;
-    color: white;
 }
-.fa-bars{
+.menu-btn i{
     display: none;
-    filter: invert(1);
+    /* filter: invert(1); */
+    color: white;
 }
 #click{
     display: none;
 }
-/* .search-icon{
-    display: none;
-    filter: invert(1);
-} */
+
 #click-search{
     display: none;
 }
@@ -205,11 +212,11 @@ ul > #pricing:hover, ul>#contact:hover{
     cursor: pointer;
     text-decoration: none;
 }
-#product-card-1 > img{
+#product-card-1 > .prod-icon-img{
     width: 25px;
     height: 25px;
+    /* border: 1px solid red; */
 }
-
 
 #product-card-1{
     cursor: pointer;
@@ -233,9 +240,7 @@ ul > #pricing:hover, ul>#contact:hover{
     background-color: #27CC8D;
     padding: 2px 5px;
 }
-/* .svg-icon{
-    filter: invert(1);
-} */
+
 #product-card-1 .unbounce a{
     margin-left: 20px;
 }
@@ -289,11 +294,6 @@ ul > #pricing:hover, ul>#contact:hover{
     margin-left: 5px;
 }
 
-/* .icon-solution{
-    filter: invert(1);
-    margin-top: -5px;
-    opacity: 0.8;
-} */
 
 #mega-menu-solution > div > h4{
     font-family: sans-serif;
@@ -396,7 +396,6 @@ ul > #pricing:hover, ul>#contact:hover{
     cursor: pointer;
 }
 
-
 @media screen and (min-width:1133px) and (max-width:1339px){
     #product-image{
         width: 270px;
@@ -409,7 +408,7 @@ ul > #pricing:hover, ul>#contact:hover{
     }
     .nav-item{
         color:#303030;
-        color: white;
+        /* color: white; */
         font-size: 18px;
     }
     #login{
@@ -417,7 +416,6 @@ ul > #pricing:hover, ul>#contact:hover{
         width: 65px;
         height: 38px;
         background-color:#303030;
-        /* border-color: blue; */
         border-color: white;
     }
     #login a{
@@ -435,51 +433,61 @@ ul > #pricing:hover, ul>#contact:hover{
         font-size: 14px;
     }
 
-    ul{
+    #ul-class{
         display: flex;
         list-style: none;
         width: 480px;
         justify-content: space-evenly;
         /* border: 1px solid red; */
     }
-    ul > li {
+    #ul-class > .nav-item {
         margin-right: 20px;
 
     }
     #search{
         width: 10px;
     }
-    img{
+    #logo{
         width: 120px;
         height: 38px;
         margin-right:40px;
+        /* border: 1px solid red; */
     }
 
 }
 
 @media screen and (min-width:68px) and (max-width:1132px){
+    #ul-class{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        background:white;
+    }
+    .dropdown:hover #mega-menu-product{
+        display: none;
+    }
+    .dropdown1:hover #mega-menu-solution{
+        display: none;
+    }
+    .dropdown2:hover > #mega-menu-learn{
+        display: none;
+    }
     #product-image{
         width: 200px;
         height: 204.34px;
         margin-top: 40px;
     }
-    /* .search-icon {
-        position: fixed;
-        top: 150px;
-        left: 0px;
-        cursor: pointer;
-        display: block;
-        background: black;
-        border: 1px solid red;
-    } */
+
     .fa-angle-down{
         display: none;
     }
     #search{
         position: fixed;
-        top: 95px;
-        width: 90%;
-        left: 20px;
+        top: 80px;
+        width: 100%;
+        left: 0;
         padding-left: 10px;
         color:black;
         background-color: white;
@@ -489,7 +497,6 @@ ul > #pricing:hover, ul>#contact:hover{
         border-top: none;
         border-left: none;
         border-right: none;
-        /* opacity: 0.2; */
     }
     #serach-btn i{
         position: fixed;
@@ -552,12 +559,13 @@ ul > #pricing:hover, ul>#contact:hover{
         font-size: 20px;
 
     }
-    img{
+    #logo{
         width: 160px;
         height: 39px;
         position: fixed;
         left: 15px;
         top: 15px;
+        /* border: 1px solid red; */
     }
     .menu-btn i{
         position: fixed;
@@ -568,14 +576,15 @@ ul > #pricing:hover, ul>#contact:hover{
         cursor: pointer;
         display: block;
     }
-    #nav > div > ul{
+    #nav > div > #ul-class{
         display: none;
     }
     #click:checked~.menu-btn i::before{
         content: "\f00d";
     }
-    #click:checked~ul{
+    #click:checked~#ul-class{
         display: block;
+        /* border: 1px solid red; */
     }
 
     #right-nav{
@@ -585,9 +594,27 @@ ul > #pricing:hover, ul>#contact:hover{
     #click:checked ~ #right-nav{
         display: block;
     }
+ 
 }   
 
 @media screen and (min-width:68px) and (max-width:275px){
+    #ul-class{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        background: white;
+    }
+    .dropdown:hover #mega-menu-product{
+        display: none;
+    }
+    .dropdown1:hover #mega-menu-solution{
+        display: none;
+    }
+    .dropdown2:hover > #mega-menu-learn{
+        display: none;
+    }
     #product-image{
         width: 200px;
         height: 204.34px;
@@ -612,7 +639,7 @@ ul > #pricing:hover, ul>#contact:hover{
         cursor: pointer;
         display: block;
     }
-    img{
+    #logo{
         width: 100px;
         height: 30px;
         position: fixed;
@@ -624,7 +651,6 @@ ul > #pricing:hover, ul>#contact:hover{
         top: 55px;
         left: 45px;
         font-size: 18px;
-
-
     }
+
 }
