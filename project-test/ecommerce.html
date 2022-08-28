@@ -10,8 +10,13 @@
     />
     <link rel="stylesheet" href="./styles/ecommerce.css" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/9c6a94074f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
   </head>
   <body>
+    <div id="navbar"></div>
+    <div id="space"></div>
     <div class="container">
       <div class="row mx-5 mt-5">
         <div class="col-md-6 col-sm-12">
@@ -427,5 +432,21 @@
         </button>
       </div>
     </div>
+
+    <div id="footer-section"></div>
   </body>
 </html>
+
+<script type="module">
+  import navbar from "./scripts/navbar.js";
+
+  document.getElementById("navbar").innerHTML = navbar();
+</script>
+<script type="module">
+  import footer from "./scripts/footer.js";
+  
+  document.getElementById("footer-section").innerHTML = footer();
+  
+</script>
+
+<script src="./scripts/scroll.js"> </script>
